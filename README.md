@@ -1,1 +1,1 @@
-# WordleWordGenerator
+A Java-based dictionary text parser that searches the dictionary for words that are of the same length as a typical Wordle puzzle and that also follow the user's entered hints. The program will then print all matching words to the console, so that the user can choose which matching word they would like to use as their next guess!
