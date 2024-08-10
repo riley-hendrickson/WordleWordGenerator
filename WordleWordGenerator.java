@@ -1,3 +1,5 @@
+// Author: Riley Hendrickson
+
 /*
  * Simple text parser that searches through the dictionary for words that match the user provided hints
  * Program will output all the words in the dictionary that match the given hints to be used as guesses for Wordle puzzle
