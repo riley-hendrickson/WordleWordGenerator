@@ -1,1 +1,2 @@
 A Java-based text parser that searches the dictionary for words that are of the same length as a typical Wordle puzzle, and that pass the user's provided hints. The program will then output the matching words to the console, so that the user can choose which word they would like to use for their next Wordle guess!
+![WordleToolSS](https://github.com/user-attachments/assets/290507bb-d16d-4069-9d14-6bc46385c66e)
