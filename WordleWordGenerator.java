@@ -65,9 +65,15 @@ public class WordleWordGenerator
 
 	public static void main(String[] args) throws FileNotFoundException
 	{
-		System.out.println("Usage: Enter 'cl' for Contains Letter, 'dcl' for Doesn't Contain Letter, 'll' for letter at location, and 'd' if you've entered all the hints");
-		
+		String continueGenerating;
 		Scanner keyboard = new Scanner(System.in);
+		File file = new File("./dictionary.txt");
+		Scanner fileReader;
+
+		do
+		{
+		fileReader = new Scanner(file);
+		System.out.println("Usage: Enter 'cl' for Contains Letter, 'dcl' for Doesn't Contain Letter, 'll' for letter at location, and 'd' if you've entered all the hints");
 		String rule;
 		String word;
 		char target;
@@ -95,10 +101,9 @@ public class WordleWordGenerator
 			case "ll":
 				System.out.println("Enter the Letter: ");
 				target = keyboard.nextLine().charAt(0);
-				System.out.println("Enter the Location of the Letter: ");
-				location = keyboard.nextInt();
+				System.out.println("Enter the Location of the Letter: (1 for the first letter, 2 for the second letter, etc.)");
+				location = keyboard.nextInt()- 1;
 				keyboard.nextLine();
-				location--;
 				Rule ll = new Rule(rule, target, location);
 				rules.add(ll);
 				break;
@@ -109,10 +114,6 @@ public class WordleWordGenerator
 				break;
 			}
 		}while(!rule.equals("d"));
-		keyboard.close();
-		
-		File file = new File("C:\\Users\\riley\\Documents\\Coding\\sandbox\\wordle\\src\\wordle\\dictionary.txt");
-		Scanner fileReader = new Scanner(file);
 		
 		while(fileReader.hasNextLine())
 		{
@@ -155,8 +156,11 @@ public class WordleWordGenerator
 				System.out.println(word);
 			}
 		}
-		
+		System.out.println("Would you like to generate another set of guesses? (y/n)");
+		continueGenerating = keyboard.nextLine();
+	}while(continueGenerating.equals("y"));
+	
+	keyboard.close();
 	fileReader.close();
 	}
-
 }
