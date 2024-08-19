@@ -2,5 +2,6 @@ A Java-based text parser that searches the dictionary for words that are of the 
 
 
 Demo Video:
+
 https://github.com/user-attachments/assets/3ca60df4-f976-4d9b-9c80-282ec3a6f50b
 
