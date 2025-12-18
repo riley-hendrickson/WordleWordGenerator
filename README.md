@@ -37,7 +37,7 @@ java WordleWordGenerator
 
 
 
-https://github.com/user-attachments/assets/3912318d-6f28-4471-a727-4c93246dabcf
+https://github.com/user-attachments/assets/2a99f52a-28d1-472b-a382-3fe300a45832
 
 
 
@@ -119,3 +119,4 @@ This project demonstrates:
 
 
 ---
+
