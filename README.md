@@ -37,6 +37,10 @@ java WordleWordGenerator
 
 
 
+https://github.com/user-attachments/assets/3912318d-6f28-4471-a727-4c93246dabcf
+
+
+
 ### Command Reference
 
 | Command | Description | Example |
@@ -112,5 +116,6 @@ This project demonstrates:
 - Inner class design for encapsulating related data
 - Early termination optimization in filtering algorithms
 - Interactive CLI development with input validation
+
 
 ---
